@@ -6,10 +6,10 @@ function generatePin(){
     const random=Math.round(Math.random()*10000);
     return random;
 }
-
+// careful with the syntax
 function pinString(){
     const pin=generatePin();
-    const Pinlength=pin+'';
+    const Pinlength=pin + '';
     if(Pinlength.length===4){
         return pin;
     }
